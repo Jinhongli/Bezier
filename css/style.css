@@ -1,0 +1,205 @@
+@media screen and (min-width: 931px) {
+  #main{
+    margin-left: 450px;
+  }
+  header{
+    font: bold 36px/100px "Microsoft Yahei", sans-serif;
+    padding:0 100px;
+  }
+  #move,#reset,#save{
+    margin-right: 50px;
+    margin-bottom: 40px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 930px) {
+  #main{
+    margin-left: 0px;
+    clear: both;
+  }
+  #move,#reset,#save{
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  header{
+    padding:0 60px;
+    font: bold 24px/60px "Microsoft Yahei", sans-serif;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  #move,#reset,#save{
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  #move{
+    margin-top: 30px;
+  }
+}
+
+body{
+  font:12px/1em Arial, "Microsoft Yahei", sans-serif;
+}
+#container{
+  margin: 60px auto;
+  max-width: 1280px;
+}
+header{
+  background-color:#3E3E3E;
+  color: white;
+}
+footer{
+  width: 100%;
+  text-align: center;
+  background-color:#3E3E3E;
+  line-height: 24px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+#aside{
+  float: left;
+  border: 2px dashed;
+}
+
+#control{
+}
+#move,#reset,#save{
+  padding: 10px 0;
+  background-color: #222832;
+  outline: none;
+  color: white;
+  font: bold 16px/30px Arial,"Microsoft Yahei", sans-serif;
+  border: 1px solid #2F3847;
+  border-radius: 5px;
+  box-shadow: 0 5px #5A687F;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+#save{
+  margin-right: 0;
+}
+#show{
+  width: 60%;
+  min-width: 200px;
+  margin-left: 50px;
+  position: relative;
+}
+#sample{
+  margin-bottom: 50px;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  background-color: rgba(253,112,20,0.8);
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font:bold 20px/100px Arial, sans-serif;
+  position: relative;
+  left: 0;
+  cursor: default;
+}
+#bar{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 5px;
+  z-index: -1;
+  border-radius: 2px;
+  background-color: #3E3E3E;
+}
+#output{
+  max-width: 780px;
+}
+#code{
+  margin-top: 50px;
+  max-width: 100%;
+  min-height: 120px;
+  color: white;
+  background-color: rgba(253,112,20,0.8);
+  padding: 20px;
+  font: 20px Consolas, sans-serif;
+  border-radius: 10px;
+}
+#code p{
+  white-space: pre-wrap;
+  padding: 5px 0;
+}
+input[type="range"]{
+  position: relative;
+  top:4px;
+}
+#input{
+  max-width: 740px;
+  background-color: #222832;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font: bold 16px "Microsoft Yahei", sans-serif;
+}
+#cp1y{
+  margin-right: 20px;
+}
+#time{
+  margin-left: 55px;
+  width: 200px;
+  cursor: pointer;
+}
+label[for="cp1x"]{
+  margin-left: 40px;
+}
+label[for="cp2y"]:before,label[for="cp1y"]:before{
+  content: ", ";
+}
+input[type="number"]{
+  padding: 3px 4px;
+  outline: none;
+  width: 60px;
+  border: none;
+  border-radius: 8px;
+}
+.clearfix{
+  clear: both;
+}
+
+.output-code{
+  float: left;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  background-color: #222832;
+  font: 20px/100px Consolas, sans-serif;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.close{
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  display: none;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(253,112,20,0.8);
+  color: white;
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  font-size: 12px;
+  line-height: 0;
+}
+.output-code:hover .close{
+  display: block;
+}
+.close:hover{
+  transform: scale(1.2,1.2);
+  cursor: pointer;
+}
